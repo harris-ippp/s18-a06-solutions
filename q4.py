@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 block_populations = pd.read_csv('Population_by_2010_Census_Block.csv')
-tract_community = pd.read_csv('community_tracts.csv')
+tract_community = pd.read_csv('tract_community.csv')
 
 block_populations['CENSUS BLOCK'] = block_populations['CENSUS BLOCK'].astype(str).str.zfill(10)
 block_populations['CENSUS TRACT'] = block_populations['CENSUS BLOCK'].str[:6]
